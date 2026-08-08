@@ -22,9 +22,25 @@ So a requirements list arrives flat — twelve items that look equally weighty o
 
 ## What This Does
 
-Ranks the defects to **one**, and tells you whether that one clears.
+Ranks the defects to **one**, and flags what resolving it costs.
 
-"Deal-killer" here doesn't mean *legally serious*. It means **nobody can sign the cure** — the party is adverse, unlocatable, unknown, or a court has to decide instead. That's a feasibility judgment, not a legal one, and it's the call this tool exists to make.
+| Flag | Means | Next move |
+|---|---|---|
+| 🟡 **YELLOW** | Known, cheap. Parties identified and available. | Speed bump. Proceed. |
+| 🟠 **ORANGE** | Path known, **cost not determinable** without scoped work. | Decide how much to spend finding out. |
+| 🔴 **RED** | Expensive, possibly prohibitive relative to the deal. | Price it in, or walk. |
+
+Behind the flag sits the severity — deal-killer, curable, nuisance — which explains *why*.
+
+**They don't map onto each other, and that's the whole point.** `CURABLE` spans all three flags, and that's where most defects live:
+
+- *"Mary Elizabeth Smith"* vs *"Mary E. Smith"* — **curable-yellow.** One affidavit, one known party.
+- Unreleased lien, lender defunct, successor unknown — **curable-orange.** Trace the successor chain to know the cost.
+- Forty-seven identified, locatable, willing heirs across six states — **curable-red.** Running them costs more than the interest is worth.
+
+Same severity code. Opposite decisions. A severity scale alone calls all three `CURABLE` and sends you into six months of signature-chasing on the last one.
+
+**RED is relative to the deal.** A $40,000 cure is orange on a $2M tract and red on a $60,000 one. Give it the deal value, or it'll tell you what threshold it assumed.
 
 It works the same whether the deal already died, is stalling now, or hasn't been examined yet. *Why it died* and *which defect was never going to clear* are the same question at different times.
 
@@ -72,13 +88,14 @@ Ask a question like:
 
 ### Output
 
-You'll get five things:
+You'll get six things:
 
-1. **Primary Cause** — One sentence naming the root defect and where in the chain it originates
-2. **Basis** — What the diagnosis rests on, and what would refute it
-3. **Reasoning Chain** — How the diagnostician traced from the failure event back to the cause
-4. **Cause vs. Symptom** — Why the thing you're seeing is downstream of the real problem
-5. **Secondary Defects** — Brief classification of anything else found (deal-killer, curable, or nuisance)
+1. **Flag** — 🟡 / 🟠 / 🔴 with the severity behind it. The headline.
+2. **Primary Cause** — One sentence naming the root defect and where in the chain it originates
+3. **Basis** — What the diagnosis rests on, and what would refute it
+4. **Reasoning Chain** — How the diagnostician traced from the failure event back to the cause
+5. **Cause vs. Symptom** — Why the thing you're seeing is downstream of the real problem
+6. **Secondary Defects** — Anything else found, with flag and severity
 
 ---
 
@@ -111,6 +128,15 @@ falsifiable, which is what makes it strong.
 > commitment and everything looked fine until the buyer's attorney flagged an old deed of
 > trust on Schedule B. Now the buyer is threatening to walk. The seller swears he paid
 > that loan off twenty years ago."*
+
+**🟠 ORANGE — curable. Resolves to 🟡 YELLOW on one check:** is First National Bank of
+Quanah still in existence, and if not, is its successor by merger or FDIC receivership
+identifiable and willing to release? That's a phone call and a charter search. If the
+institution failed and the note went into a pool that can't be traced, it escalates
+toward red — a suit to quiet title against an unlocatable lienholder.
+
+The defect is identical either way. **The cost isn't, and nobody has determined which
+case this is.**
 
 **Primary Cause:** A Deed of Trust dated March 15, 1983, from Robert and Linda Dawson to
 First National Bank of Quanah, recorded at Volume 287, Page 142, securing a note of

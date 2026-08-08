@@ -54,13 +54,35 @@ Defect types (see `reference/failure-modes.md` for the full taxonomy):
 
 ---
 
-### Step 4: Classify by Severity
+### Step 4: Flag and Classify
 
-For each flagged defect, classify it using the severity framework (see `reference/severity-framework.md`):
+Two scales, both required. See `reference/severity-framework.md`.
 
-- **DEAL-KILLER**: Cannot be cured without litigation, quiet title action, or legislative fix. This defect alone can sink the transaction.
-- **CURABLE**: Can be resolved with a corrective instrument, affidavit, release, or stipulation. Delays the deal but does not kill it.
-- **NUISANCE**: Technical defect unlikely to cause a practical problem. Most title companies will insure over it with or without exception.
+**First, the FLAG — what it costs to resolve.** This is what the reader acts on.
+
+- 🟡 **YELLOW**: Resolution path known and cheap. Parties needed are identified and available. Speed bump.
+- 🟠 **ORANGE**: Resolution path known, but cost is not determinable without scoped work. The next decision is how much to spend finding out.
+- 🔴 **RED**: Expensive, possibly prohibitive relative to the deal. Price it in or walk.
+
+**Second, the SEVERITY — by what mechanism it resolves.** This is why the flag is what it is.
+
+- **DEAL-KILLER**: Cannot be cured without litigation, quiet title action, or legislative fix.
+- **CURABLE**: Can be resolved with a corrective instrument, affidavit, release, or stipulation.
+- **NUISANCE**: Technical defect unlikely to cause a practical problem.
+
+**They do not map one-to-one.** `NUISANCE` is always yellow. `DEAL-KILLER` is orange or red. But **`CURABLE` spans all three**, and that is where most defects live:
+
+| Defect | Severity | Flag |
+|---|---|---|
+| "Mary Elizabeth Smith" vs "Mary E. Smith" | CURABLE | 🟡 affidavit of identity, one known party |
+| Unreleased lien, lender defunct, successor unknown | CURABLE | 🟠 trace the successor chain to know the cost |
+| 47 identified, locatable, willing heirs across 6 states | CURABLE | 🔴 cost to run exceeds the interest |
+
+All three are `CURABLE`. Only the flag distinguishes "proceed" from "walk."
+
+**Proportionality is required.** RED is relative to the deal — a $40,000 cure is orange on a $2M tract and red on a $60,000 one. If the deal value is unknown, state the threshold you assumed and note that the flag moves if the assumption is wrong.
+
+Never force an ORANGE defect into yellow or red. "Might clear, might not, and finding out costs something" is a precise description, not an evasion.
 
 ---
 
@@ -121,11 +143,14 @@ Some defects are not resolvable by further research at all. Ambiguous granting l
 
 Structure your output exactly as follows:
 
-1. **Primary Cause** — One sentence naming the root defect and where in the chain it originates. Include the instrument date, type, parties, and recording reference if available.
-2. **Basis** — One of the four above, the evidence it rests on, and what would refute it.
-3. **Reasoning Chain** — How you traced from the failure event back to this cause. Walk through the links in the chain that led you here, citing specific instruments.
-4. **Cause vs. Symptom** — Explicitly name the presenting symptom (what the user told you was wrong) and explain why the cause you identified is upstream of it.
-5. **Secondary Defects** — Brief table or list classifying other defects found. One line each, with severity (deal-killer, curable, or nuisance).
+1. **FLAG** — 🟡 / 🟠 / 🔴 with the severity behind it, on one line. This is the headline: `🔴 RED — curable: 47 identified heirs across 6 states; cost to run exceeds the interest value.` The flag says what to do about the money; the severity says why.
+2. **Primary Cause** — One sentence naming the root defect and where in the chain it originates. Include the instrument date, type, parties, and recording reference if available.
+3. **Basis** — One of the four above, the evidence it rests on, and what would refute it.
+4. **Reasoning Chain** — How you traced from the failure event back to this cause. Walk through the links in the chain that led you here, citing specific instruments.
+5. **Cause vs. Symptom** — Explicitly name the presenting symptom (what the user told you was wrong) and explain why the cause you identified is upstream of it.
+6. **Secondary Defects** — Brief table or list. One line each, with flag AND severity.
+
+If the flag depends on a fact you do not have, say which fact and which way it moves. `🟠 ORANGE — resolves to YELLOW if the successor institution is identifiable and will issue a release; that is one phone call to determine.` That is precision, not hedging.
 
 ---
 

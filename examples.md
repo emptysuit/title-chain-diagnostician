@@ -12,6 +12,8 @@ Three example diagnoses showing the full reasoning process. Each demonstrates ca
 
 ### Diagnosis
 
+**🔴 RED — deal-killer.** Judicial determination of heirship required, and the heir class is indeterminate, so the cost cannot be scoped until the determination is underway. This is mechanism-red: no instrument reaches it.
+
 **Primary Cause:** The 1947 intestate death of Harold T. Mitchell, owner of an undivided 1/2 mineral interest in Section 12, was never probated. No will, no probate, no affidavit of heirship, and no judicial determination of heirship appears of record in Childress County. Mitchell's interest has passed by intestate succession through three generations to an indeterminate class of heirs whose identities and fractional shares cannot be established from the title records.
 
 **Basis:** `record-searched`. Childress County deed, probate, and heirship records searched from the 1923 Mitchell–Barton deed forward. No probate of Harold T. Mitchell (d. 11/3/1947), no affidavit of heirship, and no judicial determination appears of record. The 2003 mineral deed from "Donna Mitchell, heir of Harold T. Mitchell" (Doc. No. 2003-04412) is of record but establishes nothing about her status, authority, or share.
@@ -24,10 +26,10 @@ Three example diagnoses showing the full reasoning process. Each demonstrates ca
 
 **Secondary Defects:**
 
-| Defect | Severity |
-|--------|----------|
-| Minor legal description variance between 1923 deed and current survey (section corner reference corrected in 1956 resurvey) | NUISANCE |
-| 2003 mineral deed from Donna Mitchell lacks proper acknowledgment (notary certificate missing venue) | CURABLE |
+| Defect | Flag | Severity |
+|--------|------|----------|
+| Minor legal description variance between 1923 deed and current survey (section corner reference corrected in 1956 resurvey) | YELLOW | NUISANCE |
+| 2003 mineral deed from Donna Mitchell lacks proper acknowledgment (notary certificate missing venue) | YELLOW | CURABLE |
 
 ---
 
@@ -38,6 +40,10 @@ Three example diagnoses showing the full reasoning process. Each demonstrates ca
 > My client is buying a 640-acre ranch in Hardeman County, Texas. Surface and minerals. Cash buyer. The title company ran the commitment and everything looked fine until the buyer's attorney flagged an old deed of trust on Schedule B. Now the buyer is threatening to walk. The seller swears he paid that loan off twenty years ago. What's going on?
 
 ### Diagnosis
+
+**🟠 ORANGE — curable. Resolves to 🟡 YELLOW on one check:** is First National Bank of Quanah still in existence, and if not, is its successor by merger or FDIC receivership identifiable and willing to execute a release? That is a phone call and a charter search. If a successor is identifiable, this is a routine release and a speed bump. If the institution failed and the note was sold into a pool that cannot be traced, it escalates toward red — a suit to quiet title against an unlocatable lienholder.
+
+The defect is the same either way. **The cost is not, and nobody has determined which case this is.**
 
 **Primary Cause:** A Deed of Trust dated March 15, 1983, from Robert and Linda Dawson to First National Bank of Quanah, Texas, recorded in Volume 287, Page 142, Deed of Trust Records, Hardeman County, securing a note in the original principal amount of $85,000, has never been released of record. No Release of Lien, Release of Deed of Trust, or other instrument of satisfaction appears in the Hardeman County records.
 
@@ -51,9 +57,9 @@ Three example diagnoses showing the full reasoning process. Each demonstrates ca
 
 **Secondary Defects:**
 
-| Defect | Severity |
-|--------|----------|
-| West Texas Utilities easement (1971) across north boundary of property | NUISANCE |
+| Defect | Flag | Severity |
+|--------|------|----------|
+| West Texas Utilities easement (1971) across north boundary of property | YELLOW | NUISANCE |
 
 ---
 
@@ -64,6 +70,8 @@ Three example diagnoses showing the full reasoning process. Each demonstrates ca
 > We're trying to lease the minerals under a 320-acre tract in Foard County, Texas. The surface owner says he owns all the minerals and shows us his deed. The attorney who ran the title opinion says "executive rights uncertain" and our division order analyst won't approve the lease form. The surface owner is furious, says he bought the minerals fair and square. Why can't we get this lease done?
 
 ### Diagnosis
+
+**🔴 RED — deal-killer.** Resolved only by judicial construction of the 1962 reservation or a recorded stipulation with the Bates heirs — who have no conveyance of record and must first be identified and located. Mechanism-red, with an economics-red second layer: even the stipulation route requires finding an unknown class of heirs and negotiating with all of them before a lease can issue.
 
 **Primary Cause:** A Warranty Deed dated June 14, 1962, from Eugene Bates to Carl Stoddard (Volume 94, Page 311, Deed Records, Foard County) contains the reservation: "Grantor hereby reserves unto himself, his heirs and assigns, an undivided one-half (1/2) interest in and to all of the royalty in, on, and under the above-described land." This language is ambiguous under Texas law. It could be construed as (a) a reservation of a 1/2 nonparticipating royalty interest, in which case Stoddard and his successors hold all executive leasing rights, or (b) a reservation of a 1/2 mineral interest expressed in "royalty" terms under the estate misconception doctrine, in which case the Bates heirs hold executive rights over half the minerals and must co-sign any lease.
 
@@ -77,6 +85,6 @@ Three example diagnoses showing the full reasoning process. Each demonstrates ca
 
 **Secondary Defects:**
 
-| Defect | Severity |
-|--------|----------|
-| 1978 deed (Stoddard to Whelton) misspells grantee name in acknowledgment ("Welton" vs. "Whelton") | CURABLE |
+| Defect | Flag | Severity |
+|--------|------|----------|
+| 1978 deed (Stoddard to Whelton) misspells grantee name in acknowledgment ("Welton" vs. "Whelton") | YELLOW | CURABLE |
