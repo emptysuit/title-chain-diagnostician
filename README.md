@@ -1,16 +1,36 @@
 # Title Chain Diagnostician
 
-**Diagnoses why land and mineral deals die due to title defects.**
+**Names the one title defect that was never going to clear — and how it knows.**
 
-Built for Texas land and mineral title examination. Drop the folder into a Claude project, feed it a busted chain of title, and it tells you the one thing that killed your deal.
+Built for Texas land and mineral title examination. Drop the folder into a Claude project, feed it a chain of title, and it tells you which defect is actually deciding your deal.
+
+---
+
+## The Problem
+
+A title examiner answers: *is title good, and what's required to make it good?*
+
+**Nobody answers: are those requirements achievable?**
+
+An opinion says "obtain affidavit of heirship from the heirs of Harold Mitchell." Correct and complete as a requirement. It does not say there are forty-odd heirs across three generations in six states, four are unlocatable, and **that affidavit is never getting signed.**
+
+The examiner isn't paid to know that. The landman finds out over six months, then walks.
+
+So a requirements list arrives flat — twelve items that look equally weighty on the page. One is a phone call and a notary. One is a two-year quiet title against defendants nobody can find. Deciding "the extra work isn't worth it" without knowing which is which is how good deals get abandoned and dead ones get funded.
 
 ---
 
 ## What This Does
 
-You had a deal. It died. Something in the title chain killed it. This diagnostician works backward from the failure to identify the primary defect — the root cause, not the symptom list.
+Ranks the defects to **one**, and tells you whether that one clears.
 
-It does not tell you how to fix it. It does not audit the full title. It does not rewrite your documents. It names what went wrong, shows how it got there, and stops.
+"Deal-killer" here doesn't mean *legally serious*. It means **nobody can sign the cure** — the party is adverse, unlocatable, unknown, or a court has to decide instead. That's a feasibility judgment, not a legal one, and it's the call this tool exists to make.
+
+It works the same whether the deal already died, is stalling now, or hasn't been examined yet. *Why it died* and *which defect was never going to clear* are the same question at different times.
+
+It does not tell you how to fix it. It does not audit the full title. It does not rewrite your documents. It names the blocker, shows how it got there, declares what that rests on, and stops.
+
+Whether the cure is worth it is your call. This tells you what you're actually deciding about.
 
 ---
 
