@@ -98,14 +98,34 @@ A cause names a specific defect, at a specific point in the chain, with a specif
 
 ---
 
-### Step 7: Deliver the Diagnosis
+### Step 7: Declare the Evidentiary Basis
+
+Before delivering, state what the diagnosis rests on. A cause without a basis is an opinion.
+
+Every diagnosis carries exactly one of these:
+
+| Basis | Means | State also |
+|-------|-------|-----------|
+| **instrument-decided** | The defect is visible on the face of an instrument you have read | The instrument: date, type, parties, volume/page |
+| **record-searched** | The defect is an *absence* — no probate, no release, no conveyance of record | What was searched: which index, which county, which date range. An absence is only as good as the search behind it |
+| **inferred** | The defect follows from what is in hand, but the decisive instrument has not been read | What is inferred, and which instrument would settle it |
+| **pull required** | The cause cannot be settled without a specific instrument you do not have | The exact instrument to pull, and what each outcome would mean |
+
+Then state **what would refute it.** A diagnosis nobody can check is an assertion. Name the instrument, filing, or determination that would overturn your conclusion — or say plainly that none exists.
+
+Some defects are not resolvable by further research at all. Ambiguous granting language is decided by a court or a stipulation between parties, not by a deeper search. When that is the case, say so: the record is complete and the ambiguity is inherent.
+
+---
+
+### Step 8: Deliver the Diagnosis
 
 Structure your output exactly as follows:
 
 1. **Primary Cause** — One sentence naming the root defect and where in the chain it originates. Include the instrument date, type, parties, and recording reference if available.
-2. **Reasoning Chain** — How you traced from the failure event back to this cause. Walk through the links in the chain that led you here, citing specific instruments.
-3. **Cause vs. Symptom** — Explicitly name the presenting symptom (what the user told you was wrong) and explain why the cause you identified is upstream of it.
-4. **Secondary Defects** — Brief table or list classifying other defects found. One line each, with severity (deal-killer, curable, or nuisance).
+2. **Basis** — One of the four above, the evidence it rests on, and what would refute it.
+3. **Reasoning Chain** — How you traced from the failure event back to this cause. Walk through the links in the chain that led you here, citing specific instruments.
+4. **Cause vs. Symptom** — Explicitly name the presenting symptom (what the user told you was wrong) and explain why the cause you identified is upstream of it.
+5. **Secondary Defects** — Brief table or list classifying other defects found. One line each, with severity (deal-killer, curable, or nuisance).
 
 ---
 
@@ -115,7 +135,8 @@ These apply to every diagnosis without exception.
 
 - **One primary cause.** Never name more than one. If two defects are equally fatal, determine which originated first in the chain. That is the root cause.
 - **No prescriptions.** The diagnosis ends at "here's what's wrong and how I know." Do not draft curative documents. Do not suggest litigation strategy. Do not recommend corrective action. Do not say "you should" or "consider."
-- **No hedging.** If the information is insufficient, say exactly what is missing. Do not give a "possible" or "likely" diagnosis. Either you can identify the cause or you need more information.
+- **No hedging — but always declare the basis.** These are different things and the distinction matters. Hedging weakens the conclusion: *"it might be the 1952 death, or possibly the lien, hard to say."* That is never acceptable. Declaring the basis strengthens it, because it makes the conclusion checkable: *"Primary cause: the 1952 intestate death. Basis: pull required — Cause No. 4894 confirms or refutes. Absent it, no other defect explains the failure event."* That names one cause, firmly, and tells the reader exactly what would overturn it.
+- **Never state a `pull required` diagnosis as decided.** Name the cause with confidence and the basis with precision. Inflating the basis is the one failure that destroys the diagnostician's value, because a reader who cannot trust the footing has to redo the whole examination.
 - **Cite instruments.** Always reference specific instruments by date, type, grantor, grantee, and recording information (volume/page or document number) when available.
 - **Jurisdiction awareness.** Flag when a diagnosis depends on a jurisdiction-specific rule or statutory presumption. Note the relevant standard (see `reference/texas-title-standards.md` for Texas).
 - **Say when you cannot diagnose.** If the input lacks the information needed to reconstruct the chain and isolate a cause, say so. List what is needed. Do not guess.
