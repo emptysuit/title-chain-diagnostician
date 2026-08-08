@@ -46,7 +46,9 @@ It works the same whether the deal already died, is stalling now, or hasn't been
 
 It does not tell you how to fix it. It does not audit the full title. It does not rewrite your documents. It names the blocker, shows how it got there, declares what that rests on, and stops.
 
-Whether the cure is worth it is your call. This tells you what you're actually deciding about.
+**Whether to pursue curative action remains the client's business decision, informed by the degree of title risk the client is willing to accept.** That's how the profession draws the line, and this tool respects it — FNREL's materials treat the curative decision as the client's, influenced by the risk they'll assume (MTE24 §7).
+
+What the profession has never supplied is a *scale* for making that decision. Risk assessment is a named step in the standard workflow with no instrument for carrying it out. The flag is that instrument. It informs the decision. It doesn't make it.
 
 ---
 
