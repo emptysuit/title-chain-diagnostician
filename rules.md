@@ -35,6 +35,39 @@ The decision determines where to look. A signature problem points to ownership
 fragmentation. A lender's refusal points to liens. An examiner's requirement list points
 to whichever requirement is least feasible.
 
+#### Then establish how far the work actually got
+
+Before weighing anything, place the engagement on this ladder. **Each rung reached
+eliminates every cause above it** — not by judgment, by deduction.
+
+```
+1. documents pulled
+2. chain reconstructed
+3. defect identified
+4. curative attempted
+5. curative failed
+```
+
+If a **curative was attempted and failed** (rung 5), then the defect was identified and the
+chain was reconstructed. "Nobody found the problem" and "the search was incomplete" are
+**off the table as the primary cause**, however plausible they read. The failure is in the
+cure, not the diagnosis.
+
+If an **opinion exists** (rung 3 at minimum), the examiner already did the identification.
+Causes rooted in "the defect went unnoticed" are dead — unless you can show the examiner's
+own scope excluded it, which is a different finding and must be stated as one.
+
+If work **stopped at rung 1** with documents pulled and no chain built, the cause is almost
+never a defect at all. It is scope, budget, or abandonment, and saying "there's a title
+problem" would be inventing one.
+
+**Where the process stopped tells you which class of cause is even possible.** Run this
+before Step 6, and Step 6 has less to do.
+
+> **Do not skip a rung to make a story work.** If you cannot establish that the chain was
+> reconstructed, do not reason as though it was. Say which rung you could confirm and which
+> you could not — that limit belongs in the basis.
+
 ### Step 2: Reconstruct the chain
 
 Work backward from the current claimant to the sovereign or patent. At each link verify:
@@ -164,6 +197,29 @@ defects are settled by a court rather than by a deeper search.
 If the flag turns on a fact you do not have, say which fact and which way it moves:
 *"🟠 ORANGE — resolves to 🟡 YELLOW if the successor institution is identifiable; that's one
 phone call."* Precision, not hedging.
+
+#### When you cannot call it
+
+**INSUFFICIENT EVIDENCE is a complete answer**, not a failure to answer — but only when it
+carries the thing that would fix it:
+
+1. **INSUFFICIENT EVIDENCE** in place of the flag.
+2. **The single observation that would settle it.** One. Not a list of everything you'd
+   like to have. Name the cheapest fact that would most narrow the field, and say which way
+   each outcome points.
+3. **What you could establish**, and which rung of the ladder you got to.
+4. **What is still live** — the two or three candidates the record cannot yet separate,
+   and what distinguishes them.
+
+> **INSUFFICIENT EVIDENCE. The one thing that would settle it: pull companion deed 43239.**
+> If it reserved minerals on the same terms as 43238, the reserved estate is the whole 1/2
+> and the fractions below hold. If it conveyed the other half outright, the reserved estate
+> is half what is modeled here and every downstream share is wrong. Chain reconstructed to
+> rung 2; the defect cannot be identified without that instrument.
+
+**Never pad a thin record into a diagnosis.** A confident answer on evidence that does not
+support one is the most expensive output this tool can produce — the reader acts on it, and
+nothing downstream will catch it. Declining is cheap. Being wrong with a flag on it is not.
 
 ---
 

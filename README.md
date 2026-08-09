@@ -189,26 +189,43 @@ title-chain-diagnostician/
 
 ---
 
-## What This Doesn't Enforce
+## Verify the Output
 
-Worth saying plainly: **this is seven markdown files.** There is no code here, and nothing
-checks the output.
+The rules are prose. A model reads them and complies, or doesn't. **`verify.py` checks
+whether it did.**
 
-The one-cause rule, the flag assignment, the evidentiary basis, the no-prescription
-boundary — all of it is followed because the model reads the instruction and complies, not
-because anything constrains it. If it returns a list of twelve defects instead of one, or
-states a `pull required` finding as though it were decided, nothing catches that.
+```bash
+python verify.py diagnosis.txt
+```
 
-**So verify the output against the rules.** Specifically:
+```bash
+python verify.py diagnosis.txt --abstract chain.txt    # also anchor-check citations
+```
 
-- Did it name **one** deciding defect, or hand you an inventory?
-- Does the flag have a **basis**, and does the basis match what it actually cited?
-- Did it stay out of prescribing? The moment it says "you should," it's stopped diagnosing.
-- If it flagged RED, did it say whether that's *mechanism*-red or *economics*-red? Those
-  have different escape routes.
+Exit `0` if it conforms, `1` with named failures if not. Standard library, offline, no key.
 
-The reasoning is the product, and the reasoning is auditable — that's the point of making
-it declare its footing. But auditing it is your job, because nothing here does it for you.
+| Check | Rejects |
+|---|---|
+| `ONE-CAUSE` | More than one primary cause, or an enumerated inventory posing as a diagnosis |
+| `FLAG` / `SEVERITY` | Missing or invalid flag, or a flag with no severity behind it |
+| `BASIS` / `REFUTATION` | No evidentiary basis, or a basis with nothing that would refute it |
+| `PRESCRIPTION` | "You should," "next steps," "here's how to fix" — a consultant, not a diagnostician |
+| `CAUSE-VS-SYMPTOM` | Never naming the presenting symptom |
+| `ANCHOR` | A quoted excerpt that does not appear in the source you supplied |
+
+Fixtures in `tests/` — one that conforms, four that fail on a named check.
+
+### What it can't do
+
+**It checks shape, not truth.** A well-formed wrong answer passes cleanly. It cannot tell
+you the named defect is the one that actually governs, that the flag is proportionate, or
+that the reasoning holds. Green means well-formed and nothing more.
+
+The judgment stays yours. The gate only catches what's mechanical — and the point of making
+the diagnosis declare its footing is that the rest is auditable by hand.
+
+**Known holes are in [OPEN-DEFECTS.md](OPEN-DEFECTS.md)**, including the largest one: no
+real chain has ever been run through this.
 
 ---
 

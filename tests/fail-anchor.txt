@@ -1,0 +1,47 @@
+﻿**ðŸŸ  ORANGE â€” curable. Resolves to ðŸŸ¡ YELLOW on one check:** is First National Bank of Quanah
+still in existence, and if not, is its successor by merger or FDIC receivership identifiable
+and willing to execute a release? That's a phone call and a charter search. If the
+institution failed and the note was sold into a pool that can't be traced, it escalates
+toward red â€” a suit to quiet title against an unlocatable lienholder.
+
+The defect is identical either way. **The cost isn't, and nobody has determined which case
+this is.**
+
+**The Decision:** Don't price this in and don't walk. Spend an afternoon on the successor
+search â€” it's cheap relative to a $1.2M transaction and it settles which deal you're in.
+The buyer's attorney is right to object; the objection just isn't costed yet.
+
+**Primary Cause:** A Deed of Trust dated March 15, 1983, from Robert and Linda Dawson to
+First National Bank of Quanah, recorded in Volume 287, Page 142, securing a note in the
+original principal amount of $85,000, has never been released of record. No Release of
+Lien, Release of Deed of Trust, or other instrument of satisfaction appears in the records.
+
+**Basis:** `instrument-decided` as to the lien â€” the Deed of Trust was read on its face at
+Volume 287, Page 142. `record-searched` as to the absence of release â€” Deed of Trust and
+Official Public Records searched from March 15, 1983 to present; no release or instrument
+of satisfaction of any kind appears.
+
+*Refuted by:* a recorded release, or a satisfaction filed in the wrong county or misindexed
+under a variant party name. **The seller's recollection of payoff is not refutation.**
+Satisfaction of the debt and release of the lien are separate events; only the second one
+appears of record, and only the second one clears title.
+
+**Reasoning Chain:** The chain from patent forward is clean â€” sovereign grant, three
+subsequent conveyances with matching grantors and grantees, consistent legal descriptions.
+The current owner acquired by a 1996 General Warranty Deed from the Dawsons. The 1983 Deed
+of Trust predates that conveyance and was not released before or after closing. The
+commitment correctly reports it as a Schedule B exception. It appears as an apparent senior
+lien encumbering the full 640 acres.
+
+**Cause vs. Symptom:** "The buyer is threatening to walk" is the symptom. The cause is the
+unreleased 1983 deed of trust. The seller's representation may well be true, but the lien
+of record survives until a release is filed, and no buyer or lender should be expected to
+take title subject to it.
+
+**Secondary Defects:**
+
+| Defect | Flag | Severity |
+|--------|------|----------|
+| West Texas Utilities easement (1971) across north boundary | YELLOW | NUISANCE |
+
+The instrument states "the lien shall be extinguished upon maturity without further action".
