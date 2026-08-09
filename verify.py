@@ -220,6 +220,21 @@ def verify(text: str, abstract: str | None) -> Result:
     if not text.strip():
         r.fail("EMPTY", "nothing to verify.")
         return r
+
+    # An INSUFFICIENT EVIDENCE return is a complete answer with a different shape.
+    # It carries no flag by design, so the diagnosis checks don't apply — but it must
+    # still name the one observation that would settle it, or it's just a shrug.
+    if re.search(r"\bINSUFFICIENT EVIDENCE\b", text, re.I):
+        r.notes.append("INSUFFICIENT EVIDENCE return — checked against that contract, not the diagnosis one")
+        if not re.search(r"would settle|settle it|single observation|one thing that would", text, re.I):
+            r.fail(
+                "SETTLE",
+                "declines to call it but never names the observation that would settle it. "
+                "That's a shrug, not an answer.",
+            )
+        check_no_prescription(text, r)
+        return r
+
     flag = check_flag(text, r)
     check_severity(text, r)
     check_basis(text, r)

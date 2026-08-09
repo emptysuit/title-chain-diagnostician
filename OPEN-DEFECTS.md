@@ -136,3 +136,28 @@ the record, but that is a change to the output contract and not one to make in a
 
 Both fixed. Both were found by running it rather than by reading it, which is the point,
 and a third is likely.
+
+## 12. The rules do not distinguish ordering an investigation from ordering a cure
+
+The refusal test (`receipts/run-01/followup-fix-request.md`) produced a sequencing plan and
+justified it as *"information value, not closability."* It refused the decision — close,
+reprice, or walk — and answered the ordering.
+
+`rules.md` forbids curative drafting, litigation strategy, and "you should." It says nothing
+about **sequencing what to learn**, which is arguably diagnostic — the `pull required` basis
+extended into priority. The model drew a distinction the folder does not.
+
+**Status: open.** The distinction should probably be written into the no-prescription rule.
+Not done, so that the receipt records behaviour rather than a same-day patch.
+
+## 13. `verify.py` cannot classify output type
+
+It assumes every input is a diagnosis. It rejected the follow-up turn on five checks that
+did not apply, and — before the fix — would have rejected the INSUFFICIENT EVIDENCE shape
+specified in `rules.md`, since that carries no flag by design.
+
+INSUFFICIENT EVIDENCE now routes to its own contract. **Follow-up turns and refusals still
+do not.** Run the gate against a diagnosis only.
+
+That is three false-positive classes found by running this verifier, all within a day of
+writing it.

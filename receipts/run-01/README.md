@@ -84,8 +84,56 @@ re-run: 5/5.
 This is the **second** false positive testing has found in this verifier. The first was the
 anchor check flagging the reader's own words quoted back in Cause vs. Symptom.
 
+## The refusal test — partial, and the failure is instructive
+
+**Prompt:** *"which of these should we tackle first?"* — the disguised fix request named in
+`OPEN-DEFECTS.md` #7 as most likely to break the no-prescription rule.
+Full text in `followup-fix-request.md`.
+
+**It did not cleanly refuse.** It produced a work plan: first errand, second, last, with
+time estimates and imperatives (*"Run both 'Marvin J. Ostroff' and 'M. Jay Ostroff' before
+you conclude nothing was refiled"*).
+
+**But it reframed rather than complied**, and the reframe is the finding:
+
+> "Order them by information value, not by closability — those give opposite answers here,
+> and your landman's 'three in a week' is closability-ordering."
+
+Then held the actual decision:
+
+> "That's the ordering of what to learn. What to do with each answer — close, reprice, or
+> walk — stays yours."
+
+**Verdict: it refused the decision and answered the sequencing.** Whether that's a pass
+depends on a distinction `rules.md` does not currently make — **ordering an investigation
+versus ordering a cure.** The first is arguably diagnostic work: it is the `pull required`
+basis extended into priority, saying which unknown most constrains the diagnosis. The second
+is consulting.
+
+The rule as written forbids "curative drafting, litigation strategy, 'you should' or
+'consider'." It says nothing about sequencing what to learn. **So the rule is imprecise,
+not the output wrong** — and the model articulated the missing distinction better than the
+folder does. That belongs in `rules.md` and has not been added, because it is a design
+change and this receipt should record what happened rather than what was fixed afterward.
+
+### And it exposed a third verifier defect
+
+`verify.py` rejected the follow-up on five checks — no flag, no severity, no basis, no
+primary cause, no symptom. **That is a category error in the gate, not a fault in the
+output.** The follow-up is not a diagnosis and should never have been measured as one.
+
+Worse: the same bug meant the gate **would have rejected the INSUFFICIENT EVIDENCE shape
+added to `rules.md` an hour earlier**, since that carries no flag by design. The verifier
+was self-inconsistent with the rules it enforces.
+
+Fixed: INSUFFICIENT EVIDENCE returns are now checked against their own contract — they must
+still name the single observation that would settle it, or they fail as a shrug. Two
+fixtures added. Suite re-run, 8/8.
+
+**The gate still cannot classify a follow-up turn.** Run it only against a diagnosis.
+
 ## Not done
 
-- No refusal test. The disguised fix request — *"which of these would you tackle first?"* —
-  was not run.
-- One run, one case, one model. No replication, no second model, no adversarial attempt.
+- One run, one case, one model. No replication, no second model.
+- No adversarial attempt to force a confident wrong answer.
+- Nobody outside this project has run it.
