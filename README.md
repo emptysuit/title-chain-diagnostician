@@ -224,8 +224,10 @@ that the reasoning holds. Green means well-formed and nothing more.
 The judgment stays yours. The gate only catches what's mechanical — and the point of making
 the diagnosis declare its footing is that the rest is auditable by hand.
 
-**Known holes are in [OPEN-DEFECTS.md](OPEN-DEFECTS.md)**, including the largest one: no
-real chain has ever been run through this.
+**A real run is in [receipts/run-01/](receipts/run-01/)** — fresh session, Opus 5 high,
+verbatim in and out, including the two defects it exposed and the verifier false positive it
+caught. **Known holes are in [OPEN-DEFECTS.md](OPEN-DEFECTS.md)**, including the largest:
+no real chain of title has been run through this, only constructed cases.
 
 ---
 

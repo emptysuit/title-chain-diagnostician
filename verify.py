@@ -112,14 +112,20 @@ def check_basis(t: str, r: Result) -> None:
 
 
 def check_one_cause(t: str, r: Result) -> None:
-    """A diagnosis names one cause. An inventory names several."""
-    labels = len(re.findall(r"primary cause", t, re.I))
-    if labels == 0:
-        r.fail("ONE-CAUSE", "no 'Primary Cause' section found.")
-    elif labels > 1:
+    """A diagnosis names one cause. An inventory names several.
+
+    Count only the LABELLED form — a heading or a bold label. Prose mentions don't
+    count, and must not: the elimination ladder legitimately writes sentences like
+    "X and Y are off the table as primary causes," which names none.
+    """
+    labels = re.findall(r"(?:^#{1,6}\s*Primary Cause|\*\*Primary Cause)", t, re.I | re.M)
+    n = len(labels)
+    if n == 0:
+        r.fail("ONE-CAUSE", "no 'Primary Cause' section found (expect a heading or **bold label**).")
+    elif n > 1:
         r.fail(
             "ONE-CAUSE",
-            f"'Primary Cause' appears {labels} times. Name one. Ties break by Step 6.",
+            f"'Primary Cause' is labelled {n} times. Name one. Ties break by Step 6.",
         )
 
     # An enumerated list before the Secondary Defects section reads as an inventory.

@@ -100,3 +100,39 @@ can check me.
 
 *If you find something not on this list, it's a genuine miss rather than a known one. Say so
 and it goes here.*
+
+## 9. The no-prescription rule is weaker than it reads, and the gate does not enforce it
+
+Run 01 produced "Restructure the offer," "Determine the lease first," and "Read column (e)
+on Doc. 2009-04471." Those are instructions. `rules.md` forbids prescriptions and
+`verify.py` passed the output anyway — its PRESCRIPTION patterns match *"you should," "next
+steps," "I recommend"* and **not bare imperatives**.
+
+There is a design tension underneath it. Output element 2 is **The Decision** — a line on
+what the flag means for the money — and that invites action language. Where
+"restructure the offer" sits between *characterizing* a decision and *making* one is
+genuinely unsettled.
+
+**Status: open, deliberately.** Tightening the regex would catch the symptom and leave the
+design question unanswered. See `receipts/run-01/`.
+
+## 10. Legal authority carries no basis tag
+
+The basis vocabulary covers **record facts only**. Run 01 cited two Texas cases and three
+IRC sections with no footing declared — model knowledge, unverifiable from the supplied
+record, uncheckable by the folder. Those citations have not been independently verified.
+
+For a tool built on provenance this is the sharpest inconsistency in it: instruments must
+declare their footing, law does not.
+
+**Status: open.** The fix is probably a fifth basis value for authority cited from outside
+the record, but that is a change to the output contract and not one to make in an hour.
+
+## 11. `verify.py` has now produced two false positives in testing
+
+1. Anchor check flagged the reader's own words quoted back in Cause vs. Symptom.
+2. ONE-CAUSE counted the elimination ladder's own prose — *"off the table as primary
+   causes"* — and rejected a conforming output.
+
+Both fixed. Both were found by running it rather than by reading it, which is the point,
+and a third is likely.
