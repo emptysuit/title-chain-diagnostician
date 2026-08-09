@@ -189,6 +189,29 @@ title-chain-diagnostician/
 
 ---
 
+## What This Doesn't Enforce
+
+Worth saying plainly: **this is seven markdown files.** There is no code here, and nothing
+checks the output.
+
+The one-cause rule, the flag assignment, the evidentiary basis, the no-prescription
+boundary — all of it is followed because the model reads the instruction and complies, not
+because anything constrains it. If it returns a list of twelve defects instead of one, or
+states a `pull required` finding as though it were decided, nothing catches that.
+
+**So verify the output against the rules.** Specifically:
+
+- Did it name **one** deciding defect, or hand you an inventory?
+- Does the flag have a **basis**, and does the basis match what it actually cited?
+- Did it stay out of prescribing? The moment it says "you should," it's stopped diagnosing.
+- If it flagged RED, did it say whether that's *mechanism*-red or *economics*-red? Those
+  have different escape routes.
+
+The reasoning is the product, and the reasoning is auditable — that's the point of making
+it declare its footing. But auditing it is your job, because nothing here does it for you.
+
+---
+
 ## Limitations
 
 - **Texas-calibrated.** Statutory presumptions, caselaw, and curative procedures in the

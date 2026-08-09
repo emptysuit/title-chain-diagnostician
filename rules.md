@@ -57,19 +57,54 @@ are defined in **`reference/severity-framework.md`**. Apply it there; do not res
 
 ### Step 5: Weigh the five factors
 
-These are the factors a title examiner already weighs when deciding how hard to press a
-defect (MTE24 §7). Use them to set the flag and to isolate which defect decides the spend.
+These are not invented here. They are the factors a title examiner already weighs when
+deciding **how strongly to phrase a requirement** — whether to demand curative action
+outright, or soften it to a recommendation the client can weigh against the risk they're
+willing to carry (MTE24 §7).
+
+**That judgment is the flag, without a scale.** An examiner presses hard on a large
+interest, a fresh defect, settled law, and a feasible cure. They soften where the interest
+is small, the defect is ancient, nobody is contesting it, the law is murky, or the cure
+can't realistically be completed. Softening *is* the orange-or-red signal — it just arrives
+as a change in tone rather than a number anybody can act on.
 
 | Factor | What moves the flag |
 |---|---|
-| **Quantum of interest affected** | A defect on 1/64th of the minerals is not the same problem as one on the whole fee. Small interest, small squeeze. |
-| **Time elapsed since the defect arose** | Age cuts both ways. Limitations periods and curative statutes may have already fixed it. Or generations of heirs have compounded it. |
-| **Whether ownership is actually in dispute** | Is there anything of record showing someone contests this? An uncontested cloud and a live adverse claim are different animals and cost differently. |
+| **Quantum of interest affected** | A defect on 1/64th of the minerals is not the problem a defect on the whole fee is. Small interest, small squeeze — and the exposure scales with it. |
+| **Time elapsed, and whether anyone is disputing** | These interact; weigh them together. See below. |
 | **Whether the law gives a clear answer** | Settled by statute, caselaw, or title standard → the path is known and priceable. Genuinely unsettled → a court decides, and nobody can quote you a number. |
 | **Whether the curative work is feasible at all** | The decisive one. Not *is there a cure* but *can this cure actually be completed* — are the parties identified, locatable, willing, and few enough to run? |
 
-**Factor five carries the most weight and is the one most often skipped.** A requirement
-can be perfectly correct as law and impossible as work.
+#### Time and dispute cut against each other
+
+The most useful thing in the factor list, and the easiest to get backwards:
+
+**A recent defect** is usually *easier to cure* — the parties who could sign a corrective
+instrument are still findable. But few instruments have been recorded since, so there is
+**little evidence either way** about whether anyone contests the ownership.
+
+**An old defect** is usually *harder to cure* — signers are dead, entities dissolved, heirs
+scattered. But decades passing with **no recorded challenge is itself evidence**: nobody
+appears to be claiming against it, and a long quiet period weakens the case for demanding
+cure at all.
+
+So age moves feasibility one direction and dispute-evidence the other. A fifty-year-old
+defect with a clean record and a locatable signer is a yellow. The same defect with the
+signer gone is a red — and the quiet record does nothing to change that, because an
+unchallenged defect you still cannot cure is still uncured.
+
+#### What is actually at risk if nobody cures it
+
+Name it. In a producing or leasable mineral context the exposure is **paying proceeds of
+production to the wrong party**, and it scales with the interest — which is why factor one
+sits first. Forgoing cure on a 1% interest and forgoing it on a 75% interest are not the
+same decision, even when the defect is identical.
+
+Stating the exposure is what lets the reader weigh it. "There's a defect" is not a decision
+input; "here is what it costs you to be wrong, and how likely that is" is.
+
+**Factor five carries the most weight and is the one most often skipped.** A requirement can
+be perfectly correct as law and impossible as work.
 
 ### Step 6: Isolate the one that decides
 
