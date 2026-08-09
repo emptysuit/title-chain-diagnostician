@@ -58,10 +58,6 @@ is orange or red — but **`CURABLE` spans all three**, and that is where most d
 Mary Elizabeth / Mary E. Smith is curable-yellow. Forty-seven heirs is curable-red. Same
 severity code, opposite decisions. That gap is the reason the flag exists.
 
----
-
-## Classification Criteria
-
 ### DEAL-KILLER
 
 A defect that cannot be resolved without litigation, quiet title action, judicial determination, or legislative fix. This defect alone can sink the transaction.
@@ -125,10 +121,16 @@ A technical defect unlikely to cause a practical problem. Most title companies w
 
 ## Edge Cases
 
-**Curable defect with unlocatable party.** If the party who could execute a curative instrument cannot be found, the defect escalates from curable to deal-killer. Reclassify accordingly.
+Each of these moves the **flag**, which is why they matter more than they look.
 
-**Stale deal-killer.** Some defects that would have been deal-killers when fresh become nuisances after sufficient time has passed (e.g., a deed of trust beyond the statute of limitations, or a title defect cured by the passage of limitation periods). Apply the relevant limitations period before classifying.
+**Curable defect with unlocatable party.** If the party who could execute the cure cannot be found, the defect escalates from curable to deal-killer and the flag goes red. **A cure nobody can sign is not a cure.** This is the single most common miscoding — the instrument exists, the law is clear, and it is still dead.
 
-**Multiple curable defects.** A stack of curable defects can collectively function as a deal-killer if the cumulative cost, complexity, or time required to cure them all exceeds the transaction's tolerance. Note this but classify each defect individually.
+**Stale deal-killer.** Some defects that were fatal when fresh become nuisances with time — a deed of trust past limitations, a defect closed by a curative statute. Apply the limitations period *before* flagging. Age is the one factor that moves a flag toward yellow rather than away from it.
+
+**Stacked curables.** A pile of yellows can total to an orange or a red. Six affidavits from six locatable parties is six times the cost of one, and at some point that is the answer. Classify each defect individually, then **say plainly that they stack, and show the count.** A broker reading six separate yellows will proceed; a broker reading "six yellows that total orange" will price it.
+
+**Jurisdiction-dependent classification.** Some defects are deal-killers in one state and curable in another — Texas's affidavit of heirship procedure makes some heirship issues curable that would require a judicial proceeding elsewhere. Name the governing rule when the classification turns on it.
+
+**Disputed vs. merely clouded.** A defect nobody is contesting and one with a live adverse claim of record cost very differently, even where the mechanism of cure is identical. Check whether anything of record shows the ownership is actually in dispute before flagging. An uncontested cloud on a 1958 deed is not the same problem as a lis pendens filed last year.
 
 **Jurisdiction-dependent classification.** Some defects are deal-killers in one jurisdiction and curable or nuisance in another (e.g., Texas's affidavit of heirship procedure makes some heirship issues curable that would require judicial proceedings elsewhere). Note the jurisdiction-specific rule.

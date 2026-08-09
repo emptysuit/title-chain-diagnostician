@@ -1,6 +1,10 @@
 # Texas Title Examination Standards
 
-Key Texas-specific rules, statutory presumptions, and case law relevant to title chain diagnosis. Reference this during diagnosis when a conclusion depends on a Texas-specific rule.
+Key Texas-specific rules, statutory presumptions, and case law relevant to title chain diagnosis. Reference this when a conclusion depends on a Texas-specific rule.
+
+**This file mostly serves factor (d)** — *does the law give a clear answer?* (`rules.md` Step 5). Where a standard or statute settles the question, the cure is priceable and the flag can be set with confidence. Where the law is genuinely unsettled — the mineral-vs-royalty constructions being the standing example — no amount of record work resolves it, a court or a stipulation does, and the flag goes red on that basis alone.
+
+Texas also moves flags *toward yellow* more than most states, because the affidavit of heirship procedure makes curable some heirship defects that would require a judicial proceeding elsewhere. Do not carry that assumption into another jurisdiction.
 
 This is not a comprehensive title manual. It covers the standards most commonly implicated in title chain failures.
 
