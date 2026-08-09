@@ -9,6 +9,42 @@ Drop the folder into a Claude project. Built for land and mineral title, Texas-c
 
 ---
 
+## Two defects, identical on paper, opposite answers
+
+> **"Mary Elizabeth Smith" vs. "Mary E. Smith."** One affidavit, one known party. A phone
+> call and a notary.
+>
+> **Forty-seven heirs across six states.** All identified. All locatable. All willing.
+> Running them costs more than the mineral interest is worth.
+
+**Both code `CURABLE`.** Every severity scale in this business calls them the same thing —
+and sends a landman into six months of signature-chasing on the second one.
+
+The severity says *by what mechanism it resolves.* It does not say *what resolving it
+costs*, and those are different questions with opposite answers. This folder asks the second
+one.
+
+Same again with an unreleased lien: identical defect, and whether the bank's successor is
+traceable is the difference between an afternoon and a suit to quiet title against an
+unlocatable lienholder. **Nobody has looked it up, so nobody knows which deal they're in.**
+
+---
+
+## The money hasn't been spent yet
+
+Most diagnosis works a corpse — the lost deal, the rejected filing, the dead transaction.
+This works the live one.
+
+*"Should we keep spending on this"* is asked while the cheque is still in your hand. The
+title opinion is on the desk, the requirements are open, the seller is getting impatient,
+and every day of landman hours is money going out on a deal you may not do. **The failure
+this prevents hasn't happened yet.**
+
+It works on a dead deal too — *why it died* and *which defect was never going to clear* are
+the same question at different times. But the expensive moment is the live one.
+
+---
+
 ## The Problem
 
 A title examiner answers: *is title good, and what's required to make it good?*
@@ -41,14 +77,8 @@ Ranks the defects to **one**, and flags what resolving it costs.
 
 Behind the flag sits the severity — deal-killer, curable, nuisance — which explains *why*.
 
-**They don't map onto each other, and that's the whole point.** `CURABLE` spans all three:
-
-- *"Mary Elizabeth Smith"* vs *"Mary E. Smith"* — **curable-yellow.** One affidavit, one known party.
-- Unreleased lien, lender defunct, successor unknown — **curable-orange.** Trace the successor chain to know the cost.
-- Forty-seven identified, locatable, willing heirs across six states — **curable-red.** Running them costs more than the interest.
-
-Same severity code. Opposite decisions. A severity scale alone calls all three `CURABLE`
-and sends you into six months of signature-chasing on the last one.
+**They don't map onto each other** — see the top of this file. `CURABLE` spans all three
+flags, and that gap is why the flag exists.
 
 **RED is relative to the deal.** A $40,000 cure is orange on a $2M tract and red on a
 $60,000 one. Give it the deal value, or it'll tell you what threshold it assumed.
@@ -63,8 +93,6 @@ $60,000 one. Give it the deal value, or it'll tell you what threshold it assumed
 - **Attorneys and examiners** wanting a second read on which defect actually governs
 - **Anyone who got a "no"** and needs to know whether it was the right call
 
-It works the same whether the deal is live, stalled, or already dead. *Why it died* and
-*which defect was never going to clear* are the same question at different times.
 
 ---
 
