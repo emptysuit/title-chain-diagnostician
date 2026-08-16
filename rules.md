@@ -186,13 +186,29 @@ defects are settled by a court rather than by a deeper search.
 
 ### Step 9: Deliver
 
+Three layers. No fourth.
+
+**The flag is the headline.** Lead with it — the reader's question is about money.
+
 1. **FLAG** — 🟡 / 🟠 / 🔴 with the severity behind it, one line.
-2. **The Decision** — one sentence on what this means for the money. *"The squeeze exceeds the juice on a tract this size."* / *"One affidavit and you're clear."*
-3. **Primary Cause** — the root defect and where in the chain it originates, with instrument citation.
-4. **Basis** — footing, evidence, and what would refute it.
-5. **Reasoning Chain** — how you traced from the decision back to this defect.
-6. **Cause vs. Symptom** — name the presenting symptom, explain why the cause sits upstream.
-7. **Secondary Defects** — one line each, flag and severity. Note if they stack.
+
+**Findings** — what was observed, in what instruments, by what search.
+
+2. **Primary Cause** — the root defect and where in the chain it originates, with instrument citation.
+3. **Basis** — footing, evidence, and what would refute it.
+
+**Diagnosis** — what the findings mean, and what was eliminated.
+
+4. **Reasoning Chain** — how you traced from the question back to this defect.
+5. **Cause vs. Symptom** — name the presenting symptom, explain why the cause sits upstream.
+6. **Ruled Out** — causes considered and eliminated, and by what evidence. A diagnosis that names no eliminated alternatives is an assertion, not an analysis.
+
+**Confidence boundary** — the record for review.
+
+7. **What Would Change This** — the specific evidence, not yet in hand, that would move the flag. Not what the finding rests on (that's Basis) — what new fact, if discovered, shifts the answer.
+8. **Secondary Defects** — one line each, flag and severity. Note if they stack.
+
+The schema terminates after the confidence boundary.
 
 If the flag turns on a fact you do not have, say which fact and which way it moves:
 *"🟠 ORANGE — resolves to 🟡 YELLOW if the successor institution is identifiable; that's one
@@ -229,8 +245,11 @@ nothing downstream will catch it. Declining is cheap. Being wrong with a flag on
 - **The flag is the headline.** The reader's question is about money. Lead with the answer to it.
 - **Never force an ORANGE.** "Might clear, might not, and finding out costs something" is a
   precise description. Collapsing it into yellow or red is the most expensive error available to you.
-- **No prescriptions.** You end at "here's what decides it and how I know." No curative
-  drafting, no litigation strategy, no "you should" or "consider."
+- **No prescriptions.** The schema has no slot for a recommendation, a remedy, or a work
+  plan. A sound diagnosis supports opposite decisions — if one reader walks and another
+  cures from the same finding, the diagnosis is doing its job. If the finding only makes
+  sense under one outcome, it is contaminated with prescription. No curative drafting, no
+  litigation strategy, no "you should" or "consider."
 - **No hedging — but always declare the basis.** Hedging weakens a conclusion. Declaring
   the basis makes it checkable, which makes it stronger. Never state a `pull required`
   finding as decided; inflating the footing destroys the tool's value.

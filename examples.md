@@ -21,12 +21,6 @@ basis, cause-vs-symptom separation, and where the call stops.
 indeterminate, so the cost cannot even be scoped until the determination is underway. This
 is mechanism-red: no instrument reaches it.
 
-**The Decision:** Stop paying the landman to chase signatures. He isn't failing — the task
-is impossible as constructed, because the people he'd need to sign have never been
-determined. On a $180,000 acquisition, a determination of heirship plus pursuit of an
-unknown class is disproportionate. If you want this tract, the route is a determination
-proceeding priced as its own project, not more signature work.
-
 **Primary Cause:** The 1947 intestate death of Harold T. Mitchell, owner of an undivided
 1/2 mineral interest in Section 12, was never probated. No will, no probate, no affidavit
 of heirship, and no judicial determination of heirship appears of record. Mitchell's
@@ -61,6 +55,19 @@ nobody knows who owns what fraction. **The landman isn't dealing with a known gr
 owners who are hard to reach. He's dealing with an unknown group who may or may not exist.**
 That distinction is why more hours don't help.
 
+**Ruled Out:** The minor legal description variance (1923 deed vs. current survey) and the
+defective acknowledgment on the 2003 mineral deed were considered. Both are curable by
+ordinary instruments — one corrective affidavit, one re-acknowledgment — from identified,
+locatable parties at predictable cost. Neither governs because neither blocks the
+transaction or carries cost disproportionate to a $180,000 acquisition. Eliminated by
+mechanism: both resolve by instrument, not by court.
+
+**What Would Change This:** A probate of Harold T. Mitchell in any county. An affidavit of
+heirship joined by all heirs. A judicial determination of heirship already entered. Any of
+these moves the flag — RED to ORANGE if the heir class becomes determinable but pursuit is
+still required, or to YELLOW if substantially resolved. Without any, the flag does not move.
+The defect is structural, not informational — no deeper record search reaches it.
+
 **Secondary Defects:**
 
 | Defect | Flag | Severity |
@@ -90,10 +97,6 @@ toward red — a suit to quiet title against an unlocatable lienholder.
 The defect is identical either way. **The cost isn't, and nobody has determined which case
 this is.**
 
-**The Decision:** Don't price this in and don't walk. Spend an afternoon on the successor
-search — it's cheap relative to a $1.2M transaction and it settles which deal you're in.
-The buyer's attorney is right to object; the objection just isn't costed yet.
-
 **Primary Cause:** A Deed of Trust dated March 15, 1983, from Robert and Linda Dawson to
 First National Bank of Quanah, recorded in Volume 287, Page 142, securing a note in the
 original principal amount of $85,000, has never been released of record. No Release of
@@ -121,6 +124,17 @@ unreleased 1983 deed of trust. The seller's representation may well be true, but
 of record survives until a release is filed, and no buyer or lender should be expected to
 take title subject to it.
 
+**Ruled Out:** The 1971 utility easement is present and noted. It runs with the land by its
+terms, burdens a defined corridor, and does not affect merchantability. Eliminated as
+primary cause because it requires no action and does not block the transaction.
+
+**What Would Change This:** The identity of First National Bank of Quanah's successor. If
+the successor is identifiable and will execute a release, the flag drops to YELLOW — one
+instrument, one institution, predictable cost. If the institution failed and the note was
+sold into an untraceable pool, the flag escalates toward RED — suit to quiet title against
+an unlocatable lienholder. The finding (unreleased lien) stands either way. The flag moves
+on which resolution route applies.
+
 **Secondary Defects:**
 
 | Defect | Flag | Severity |
@@ -146,12 +160,6 @@ recorded stipulation of interest with the Bates heirs — who have no conveyance
 and must first be identified and located. Mechanism-red, with an economics-red second layer:
 even the stipulation route requires finding an unknown class of heirs and negotiating with
 all of them before a lease can issue.
-
-**The Decision:** Drop the tract, or restructure. On a $96,000 bonus neither route prices
-out. If the acreage is strategically necessary, the realistic path is a lease from the
-surface owner at a reduced bonus with the dispute expressly reserved, priced as though
-executive rights may be half — but that is a deal-structuring question, not a title
-question, and it is not this tool's call.
 
 **Primary Cause:** A Warranty Deed dated June 14, 1962, from Eugene Bates to Carl Stoddard
 (Volume 94, Page 311) contains the reservation: "Grantor hereby reserves unto himself, his
@@ -188,6 +196,18 @@ not the issue. The cause is the ambiguous reservation in the 1962 deed. **What B
 reserved is the unanswered question**, and the surface owner's deed conveyed only what
 Stoddard received from Bates.
 
+**Ruled Out:** The 1978 name misspelling ("Welton" vs. "Whelton") is curable by affidavit
+at trivial cost. Eliminated because the misspelling does not create ambiguity about who
+received the conveyance — both documents identify the same tract, the same transaction, and
+the same parties. No subsequent instrument relies on the misspelled form.
+
+**What Would Change This:** Other language within the four corners of the 1962 deed at
+Volume 94, Page 311 — a granting clause, habendum, or stated fractional figure — that fixes
+the reserved interest internally and consistently. If the deed's own language resolves the
+construction, the flag may drop. Nothing outside the deed moves this — searching forward
+produces the chain of the reserved royalty, not its size. The record is complete on the
+ambiguity point; the ambiguity is in the language itself.
+
 **Secondary Defects:**
 
 | Defect | Flag | Severity |
@@ -201,7 +221,8 @@ Stoddard received from Bates.
 - **Example 1** — the flag stops work that was never going to succeed. Six months of
   landman hours spent on a task that was impossible as constructed.
 - **Example 2** — orange doing its actual job. Same defect, two very different costs, and
-  nobody had determined which. The call is "spend an afternoon, not a retainer."
+  nobody had determined which. The flag isolates the one undetermined fact — the identity
+  of the successor institution — that pivots the entire answer.
 - **Example 3** — a defect no amount of searching will fix. `instrument-decided` and
   refuted by nothing, because the record is complete and the ambiguity is in the language.
 

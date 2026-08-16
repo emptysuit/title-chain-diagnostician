@@ -7,10 +7,6 @@ toward red — a suit to quiet title against an unlocatable lienholder.
 The defect is identical either way. **The cost isn't, and nobody has determined which case
 this is.**
 
-**The Decision:** Don't price this in and don't walk. Spend an afternoon on the successor
-search — it's cheap relative to a $1.2M transaction and it settles which deal you're in.
-The buyer's attorney is right to object; the objection just isn't costed yet.
-
 **Primary Cause:** A Deed of Trust dated March 15, 1983, from Robert and Linda Dawson to
 First National Bank of Quanah, recorded in Volume 287, Page 142, securing a note in the
 original principal amount of $85,000, has never been released of record. No Release of
@@ -37,6 +33,15 @@ lien encumbering the full 640 acres.
 unreleased 1983 deed of trust. The seller's representation may well be true, but the lien
 of record survives until a release is filed, and no buyer or lender should be expected to
 take title subject to it.
+
+**Ruled Out:** The 1971 utility easement is present and noted. It runs with the land by its
+terms, burdens a defined corridor, and does not affect merchantability. Eliminated as
+primary cause because it requires no action and does not block the transaction.
+
+**What Would Change This:** The identity of First National Bank of Quanah's successor. If
+the successor is identifiable and will execute a release, the flag drops to YELLOW. If the
+institution failed and the note was sold into an untraceable pool, the flag escalates toward
+RED.
 
 **Secondary Defects:**
 

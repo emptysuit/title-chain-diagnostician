@@ -111,15 +111,16 @@ proportion and it's meaningless without one.
 - *"Is it worth commissioning an opinion here?"*
 - *"The buyer walked. Were they right to?"*
 
-**Output — seven things:**
+**Output — three layers, no fourth:**
 
 1. **Flag** — 🟡 / 🟠 / 🔴 with the severity behind it
-2. **The Decision** — one sentence on what it means for the money
-3. **Primary Cause** — the defect that decides it, with instrument citation
-4. **Basis** — what the finding rests on, and what would refute it
-5. **Reasoning Chain** — how it traced from the decision back to the defect
-6. **Cause vs. Symptom** — why what you're seeing is downstream
-7. **Secondary Defects** — flag and severity each, noted if they stack
+2. **Primary Cause** — the defect that decides it, with instrument citation
+3. **Basis** — what the finding rests on, and what would refute it
+4. **Reasoning Chain** — how it traced from the question back to the defect
+5. **Cause vs. Symptom** — why what you're seeing is downstream
+6. **Ruled Out** — causes considered and eliminated, and by what evidence
+7. **What Would Change This** — the evidence, not yet in hand, that moves the flag
+8. **Secondary Defects** — flag and severity each, noted if they stack
 
 ---
 
@@ -155,9 +156,6 @@ and willing to release? That's a phone call and a charter search. If the institu
 and the note went into a pool that can't be traced, it escalates toward red — a suit to
 quiet title against an unlocatable lienholder.
 
-**The Decision:** Don't price this in yet and don't walk. Spend the afternoon on the
-successor search — it's cheap and it settles which deal you're in.
-
 **Primary Cause:** A Deed of Trust dated March 15, 1983, from Robert and Linda Dawson to
 First National Bank of Quanah, recorded at Volume 287, Page 142, securing a note of
 $85,000, has never been released of record.
@@ -171,6 +169,12 @@ only the second one clears title.
 
 **Cause vs. Symptom:** "The buyer is threatening to walk" is the symptom. The unreleased
 1983 deed of trust is the cause.
+
+**Ruled Out:** The 1971 utility easement — runs with the land, defined corridor, does not
+affect merchantability.
+
+**What Would Change This:** The identity of the bank's successor. If identifiable and
+willing to release, the flag drops to YELLOW. If untraceable, it escalates toward RED.
 
 Then it stops. It does not tell you to go get a release. That's your attorney's call.
 
@@ -238,6 +242,8 @@ Exit `0` if it conforms, `1` with named failures if not. Standard library, offli
 | `FLAG` / `SEVERITY` | Missing or invalid flag, or a flag with no severity behind it |
 | `BASIS` / `REFUTATION` | No evidentiary basis, or a basis with nothing that would refute it |
 | `PRESCRIPTION` | "You should," "next steps," "here's how to fix" — a consultant, not a diagnostician |
+| `RULED-OUT` | No eliminated alternatives — an assertion, not an analysis |
+| `WHAT-WOULD-CHANGE` | No confidence boundary — what evidence would move the flag |
 | `CAUSE-VS-SYMPTOM` | Never naming the presenting symptom |
 | `ANCHOR` | A quoted excerpt that does not appear in the source you supplied |
 

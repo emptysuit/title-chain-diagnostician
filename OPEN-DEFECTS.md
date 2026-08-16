@@ -59,14 +59,18 @@ anchor check does nothing.
 
 **Status: working as designed, but easy to over-trust.** Green means well-formed. Nothing more.
 
-## 5. The anchor check excludes one section, and that's a real gap
+## 5. The anchor check excludes reader-facing sections, and that's a real gap
 
-`check_anchors` skips the Cause vs. Symptom block, because that section quotes the reader's
-own words rather than the record. That prevents a false positive I hit while testing — but
-it also means **a fabricated quote placed in that section is not caught.**
+`check_anchors` skips the Cause vs. Symptom block and standalone `**Symptom:**` labels,
+because those sections quote the reader's own words rather than the record. Matching is now
+case-insensitive (a quote that capitalizes the first word of a sentence still matches). But
+**a fabricated quote placed in an excluded section is not caught**, and diagnostic labels in
+quotes ("the search missed something") trigger false positives because the checker treats
+all double-quoted text ≥25 chars as potential record quotes.
 
-**Status: known, accepted.** Narrowing the exclusion would need the diagnosis to mark which
-quotes are record text, which is a format change I'd rather not make hours after shipping.
+**Status: partially closed (2026-08-16).** Expanded exclusion to cover standalone Symptom
+labels and added case-insensitive matching. The fundamental gap — checker cannot distinguish
+attribution from emphasis — remains open.
 
 ## 6. Texas-only, asserted rather than tested
 
@@ -108,13 +112,15 @@ on Doc. 2009-04471." Those are instructions. `rules.md` forbids prescriptions an
 `verify.py` passed the output anyway — its PRESCRIPTION patterns match *"you should," "next
 steps," "I recommend"* and **not bare imperatives**.
 
-There is a design tension underneath it. Output element 2 is **The Decision** — a line on
-what the flag means for the money — and that invites action language. Where
-"restructure the offer" sits between *characterizing* a decision and *making* one is
-genuinely unsettled.
-
-**Status: open, deliberately.** Tightening the regex would catch the symptom and leave the
-design question unanswered. See `receipts/run-01/`.
+**Status: partially closed (2026-08-16).** The design tension was that output element 2
+(**The Decision**) invited action language by design — the slot existed, so prescription
+filled it. The fix was schema surgery: The Decision field is removed. The output schema now
+has three layers (findings, diagnosis, confidence boundary) and no fourth. Two required
+fields (**Ruled Out** and **What Would Change This**) replace it. `verify.py` now rejects
+output missing either. The bare-imperative gap in the PRESCRIPTION regex remains open — the
+schema is the real enforcement, the regex is a backstop for common phrases. Run 01 was
+produced under the prior schema and is a receipt of the old output, not a specimen of the
+current one.
 
 ## 10. Legal authority carries no basis tag
 
@@ -128,14 +134,16 @@ declare their footing, law does not.
 **Status: open.** The fix is probably a fifth basis value for authority cited from outside
 the record, but that is a change to the output contract and not one to make in an hour.
 
-## 11. `verify.py` has now produced two false positives in testing
+## 11. `verify.py` has now produced three false positives in testing
 
-1. Anchor check flagged the reader's own words quoted back in Cause vs. Symptom.
+1. Anchor check flagged the reader's own words quoted back in Cause vs. Symptom. Fixed.
 2. ONE-CAUSE counted the elimination ladder's own prose — *"off the table as primary
-   causes"* — and rejected a conforming output.
+   causes"* — and rejected a conforming output. Fixed.
+3. Anchor check flagged diagnostic labels in quotes — *"the search missed something"* —
+   as unverified record text. Not fixed; checker cannot distinguish attribution from
+   emphasis. (Found 2026-08-16 running `verify.py --abstract` against run-01.)
 
-Both fixed. Both were found by running it rather than by reading it, which is the point,
-and a third is likely.
+All found by running it rather than by reading it, which is the point. A fourth is likely.
 
 ## 12. The rules do not distinguish ordering an investigation from ordering a cure
 

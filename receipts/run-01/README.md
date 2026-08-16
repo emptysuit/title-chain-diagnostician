@@ -26,7 +26,8 @@ volume to rank against.
 **It rejected the decoy.** Named the 1961 double-fraction royalty reservation as the
 deciding defect; filed the tax lien as an orange likely resolving to yellow.
 
-`verify.py` — **conforms** (after a false-positive fix, below).
+`verify.py` — **conformed under original checks** (after a false-positive fix, below).
+Fails revised checks (2026-08-16) — see bottom of this file.
 
 ### What it did that the folder did not supply
 
@@ -132,8 +133,40 @@ fixtures added. Suite re-run, 8/8.
 
 **The gate still cannot classify a follow-up turn.** Run it only against a diagnosis.
 
+## `verify.py --abstract` against actual input (2026-08-16)
+
+The judges noted this was "claimed against an input it had not seen." Run now:
+
+```
+$ python verify.py receipts/run-01/output.md --abstract receipts/run-01/input.md
+
+  note: headline flag read as RED (others appear later: YELLOW, ORANGE)
+  note: anchor-checked 3 record quote(s), 2 verified
+        (Cause vs. Symptom excluded — it quotes the reader, not the record)
+  FAIL  [WHAT-WOULD-CHANGE] no confidence boundary.
+        Name the specific evidence that would move the flag.
+  FAIL  [ANCHOR] quoted record text not found in the supplied source:
+        "the search missed something"
+
+REJECTED — 2 contract violation(s).
+```
+
+**WHAT-WOULD-CHANGE** — expected. This output was produced under the prior schema, which
+had no "What Would Change This" required field. The schema was revised 2026-08-16: The
+Decision field removed, Ruled Out and What Would Change This added as required fields.
+
+**ANCHOR** — false positive. "The search missed something" is a diagnostic label for a
+hypothetical cause being eliminated, not a record quote. The checker treats all
+double-quoted text ≥25 characters as potential record quotes and cannot distinguish
+attribution from emphasis. (Logged as OPEN-DEFECTS #11, item 3.)
+
+This output conformed to the schema that was live when it was produced. It does not conform
+to the revised schema. A run under the current schema has not yet been produced.
+
 ## Not done
 
 - One run, one case, one model. No replication, no second model.
 - No adversarial attempt to force a confident wrong answer.
 - Nobody outside this project has run it.
+- No run under the revised schema (Decision removed, Ruled Out and What Would Change This
+  added). This run is a receipt of the old output.

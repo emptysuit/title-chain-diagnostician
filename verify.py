@@ -172,12 +172,20 @@ def check_red_route(t: str, flag: str | None, r: Result) -> None:
         )
 
 
-def check_decision(t: str, r: Result) -> None:
-    if not re.search(r"the decision|worth|spend|proportion|walk|price it in", t, re.I):
-        r.warn(
-            "DECISION",
-            "no line on what this means for the money. The flag is the headline; the "
-            "decision sentence is what makes it actionable.",
+def check_ruled_out(t: str, r: Result) -> None:
+    if not re.search(r"ruled out|eliminated|considered and|off the table as", t, re.I):
+        r.fail(
+            "RULED-OUT",
+            "no eliminated alternatives. A diagnosis that names no ruled-out causes is "
+            "an assertion, not an analysis.",
+        )
+
+
+def check_what_would_change(t: str, r: Result) -> None:
+    if not re.search(r"would change|would move|would shift|would (drop|escalate|raise)|moves the flag", t, re.I):
+        r.fail(
+            "WHAT-WOULD-CHANGE",
+            "no confidence boundary. Name the specific evidence that would move the flag.",
         )
 
 
@@ -190,11 +198,18 @@ def check_anchors(t: str, abstract: str, r: Result) -> None:
     """
     src = norm(abstract)
 
-    # Drop the Cause vs. Symptom block: it quotes the reader, not the record.
+    # Drop blocks that quote the reader, not the record: Cause vs. Symptom and
+    # standalone Symptom labels (run-01 used that form).
     scannable = re.sub(
         r"\*\*Cause vs\.?\s*Symptom:?\*\*.*?(?=\n\s*\*\*[A-Z]|\Z)",
         "",
         t,
+        flags=re.S | re.I,
+    )
+    scannable = re.sub(
+        r"\*\*Symptom:?\*\*.*?(?=\n\s*\*\*[A-Z]|\Z)",
+        "",
+        scannable,
         flags=re.S | re.I,
     )
 
@@ -202,7 +217,7 @@ def check_anchors(t: str, abstract: str, r: Result) -> None:
     if not quotes:
         r.notes.append("no record quotes to anchor-check")
         return
-    bad = [q for q in quotes if norm(q) not in src]
+    bad = [q for q in quotes if norm(q).lower() not in src.lower()]
     for q in bad:
         short = q if len(q) <= 70 else q[:67] + "…"
         r.fail("ANCHOR", f'quoted record text not found in the supplied source: "{short}"')
@@ -242,7 +257,8 @@ def verify(text: str, abstract: str | None) -> Result:
     check_no_prescription(text, r)
     check_cause_vs_symptom(text, r)
     check_red_route(text, flag, r)
-    check_decision(text, r)
+    check_ruled_out(text, r)
+    check_what_would_change(text, r)
     if abstract:
         check_anchors(text, abstract, r)
     return r
